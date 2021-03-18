@@ -35,6 +35,10 @@ spring:
           uri: https://kaguvi-user-management-service.herokuapp.com/
           predicates:
             - Path=/auth/**, /oauth2/**
+        - id: tenant-management-service
+          uri: https://kaguvi-tenant-management-svc.herokuapp.com/
+          predicates:
+            - Path=/tenant/**
 eureka:
   client:
     register-with-eureka: true
