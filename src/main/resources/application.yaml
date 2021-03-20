@@ -3,7 +3,7 @@ spring:
     activate:
       on-profile: dev
   application:
-    name: api-gateway-dev
+    name: api-gateway
   cloud:
     gateway:
       routes:
@@ -31,7 +31,7 @@ spring:
     activate:
       on-profile: test
   application:
-    name: api-gateway-test
+    name: api-gateway
   cloud:
     gateway:
       routes:
