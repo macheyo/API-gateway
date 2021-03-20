@@ -15,6 +15,10 @@ spring:
           uri: http://localhost:8001/
           predicates:
             - Path=/tenant/**
+        - id: product-management-service
+          uri: http://localhost:8002/
+          predicates:
+            - Path=/product/**
 eureka:
   client:
     register-with-eureka: true
@@ -39,6 +43,10 @@ spring:
           uri: https://kaguvi-tenant-management-svc.herokuapp.com/
           predicates:
             - Path=/tenant/**
+        - id: product-management-service
+          uri: https://kaguvi-product-management.herokuapp.com/
+          predicates:
+            - Path=/product/**
 eureka:
   client:
     register-with-eureka: true
